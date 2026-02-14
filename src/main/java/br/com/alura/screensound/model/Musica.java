@@ -26,6 +26,14 @@ public class Musica {
     @ManyToOne
     private Artista artista;
 
+    protected Musica() {
+    }
+
+    public Musica(String musica, GeneroMusical genero) {
+        this.titulo = musica;
+        this.generoMusical = genero;
+    }
+
     public Long getId() {
         return id;
     }
